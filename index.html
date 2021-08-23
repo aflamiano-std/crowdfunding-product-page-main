@@ -17,18 +17,20 @@
 <body>
   <header class="header">
     <div class="header--primary">
-      <div class="logo">
-        <img src="./images/logo.svg" alt="">
-      </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Discover</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Get Started</a></li>
-        </ul>
-      </nav>
-      <div class="nav-toggle">
-        <span class="hamburger"></span>
+      <div class="header-nav">
+        <div class="logo">
+          <a href="#"><img src="./images/logo.svg" alt="" class="logo__img"></a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Discover</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Get Started</a></li>
+          </ul>
+        </nav>
+        <div class="nav-toggle">
+          <span class="hamburger"></span>
+        </div>
       </div>
     </div>
     <div class="header--secondary">
@@ -39,7 +41,9 @@
         <button class="btn-main select-reward">Back this project</button>
         <div class="bookmark-toggle">
           <input type="checkbox" id="bookmark" class="bookmark-toggle__checkbox">
-          <label for="bookmark" class="bookmark-toggle__label">Bookmark</label>
+          <label for="bookmark" class="bookmark-toggle__label">
+            <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#2F2F2F" cx="28" cy="28" r="28"/><path fill="#B1B1B1" d="M23 19v18l5-5.058L33 37V19z"/></g></svg>
+          </label>
         </div>
       </div>
     </div>
@@ -105,7 +109,7 @@
         </p>
         <div class="product__footer">
           <div class="product__stock"><strong class="product__stock--highlight">101</strong> left</div>
-          <button class="btn-sub select-reward">Select Reward</button>
+          <button class="btn-sub select-reward bamboo">Select Reward</button>
         </div>
       </div>
       <div class="product">
@@ -119,7 +123,7 @@
         </p>
         <div class="product__footer">
           <div class="product__stock"><strong class="product__stock--highlight">64 </strong> left</div>
-          <button class="btn-sub select-reward">Select Reward</button>
+          <button class="btn-sub select-reward black">Select Reward</button>
         </div>
       </div>
       <div class="product">
@@ -141,7 +145,7 @@
   
    <!-- Selection modal start -->
 
-   <div class="modal  active" id="modal-reward">
+   <div class="modal" id="modal-reward">
       <div class="modal__header">
         <div class="modal__title-container">
           <div class="modal__title">
@@ -156,49 +160,62 @@
       <div class="pledges">
         <!-- pledge 1 start -->
         <div class="pledge">
-          <div class="pledge--order pledge-container">
-            <div class="pledge__selection">
-              <input type="radio" name="pledge-radio" id="pledge-1">
-              <label for="pledge-1" class="pledge__radio"></label>
+          <label for="pledge-1">
+            <div class="pledge--order pledge-container">
+              <div class="pledge__selection">
+                <input type="radio" name="pledge-radio" id="pledge-1" class="pledge__radio-input" checked>
+                <label for="pledge-1" class="pledge__radio"></label>
+              </div>
               <div class="pledge__header">
                 <label for="pledge-1" class="pledge__title">Pledge with no reward</label>
               </div>
+              <p class="pledge__body">
+                Choose to support us without a reward if you simply believe in our project. As a backer, 
+    you will be signed up to receive product updates via email.
+              </p>
             </div>
-            <div class="pledge__stock"></div>
-            <p class="pledge__body">
-              Choose to support us without a reward if you simply believe in our project. As a backer, 
-  you will be signed up to receive product updates via email.
-            </p>
+          </label>
+          <!-- Selected pledge start -->
+          <div class="pledge-extend">
+            <div class="pledge__noreward pledge-container">
+              <button class="btn-sub continue">Continue</button>
+            </div>
           </div>
+          <!-- Selected pledge end -->
         </div>
+        
         <!-- pledge 1 end -->
 
         <!-- pledge 2 start -->
         <div class="pledge">
-          <div class="pledge--order pledge-container">
+          <label for="pledge-2">
+            <div class="pledge--order pledge-container">
               <div class="pledge__selection">
-                <input type="radio" name="pledge-radio" id="pledge-2">
+                <input type="radio" name="pledge-radio" id="pledge-2" class="pledge__radio-input">
                 <label for="pledge-2" class="pledge__radio"></label>
-                <div class="pledge__header">
-                  <label for="pledge-2" class="pledge__title">Bamboo Stand</label>
-                  <div class="pledge__amount">Pledge $25 or more</div>
-                </div>
+              </div>
+              <div class="pledge__header">
+                <label for="pledge-2" class="pledge__title">Bamboo Stand</label>
+                <div class="pledge__amount">Pledge $25 or more</div>
               </div>
               <div class="pledge__stock"><strong>101 </strong>left</div>
-            <p class="pledge__body">
-              You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
-    you’ll be added to a special Backer member list.
-            </p>
-          </div>
+              <p class="pledge__body">
+                You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+                you’ll be added to a special Backer member list.
+              </p>
+            </div>
+          </label>
           <!-- Selected pledge start -->
-          <div class="pledge__input pledge-container">
-            <p class="pledge__enter">Enter your pledge</p>
-            <div class="pledge__input-wrapper">
-              <label class="pledge__value">
-                <input type="text" required>
-                <span class="placeholder">$ <strong>25</strong></span>
-              </label>
-              <button class="btn-sub continue">Continue</button>
+          <div class="pledge-extend">
+            <div class="pledge__input pledge-container">
+              <p class="pledge__enter">Enter your pledge</p>
+              <div class="pledge__input-wrapper">
+                <label class="pledge__value">
+                  <input type="text" required>
+                  <span class="placeholder">$ <strong>25</strong></span>
+                </label>
+                <button class="btn-sub continue">Continue</button>
+              </div>
             </div>
           </div>
           <!-- Selected pledge end -->
@@ -208,30 +225,34 @@
 
         <!-- pledge 3 start -->
         <div class="pledge">
-          <div class="pledge--order pledge-container">
-            <div class="pledge__selection">
-              <input type="radio" name="pledge-radio" id="pledge-3">
-              <label for="pledge-3" class="pledge__radio"></label>
+          <label for="pledge-3">
+            <div class="pledge--order pledge-container">
+              <div class="pledge__selection">
+                <input type="radio" name="pledge-radio" id="pledge-3" class="pledge__radio-input">
+                <label for="pledge-3" class="pledge__radio"></label>
+              </div>
               <div class="pledge__header">
                 <label for="pledge-3" class="pledge__title">Black Edition Stand</label>
                 <div class="pledge__amount">Pledge $75 or more</div>
               </div>
+              <div class="pledge__stock"><strong>64 </strong>left</div>
+              <p class="pledge__body">
+                You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+                member list. Shipping is included.
+              </p>
             </div>
-            <div class="pledge__stock"><strong>64 </strong>left</div>
-            <p class="pledge__body">
-              You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-  member list. Shipping is included.
-            </p>
-          </div>
+          </label>
           <!-- Selected pledge start -->
-          <div class="pledge__input pledge-container">
-            <p class="pledge__enter">Enter your pledge</p>
-            <div class="pledge__input-wrapper">
-              <label class="pledge__value">
-                <input type="text" required>
-                <span class="placeholder">$ <strong>75</strong></span>
-              </label>
-              <button class="btn-sub continue">Continue</button>
+          <div class="pledge-extend">
+            <div class="pledge__input pledge-container">
+              <p class="pledge__enter">Enter your pledge</p>
+              <div class="pledge__input-wrapper">
+                <label class="pledge__value">
+                  <input type="text" required>
+                  <span class="placeholder">$ <strong>75</strong></span>
+                </label>
+                <button class="btn-sub continue">Continue</button>
+              </div>
             </div>
           </div>
           <!-- Selected pledge end -->
@@ -240,21 +261,23 @@
 
         <!-- pledge 4 start -->
         <div class="pledge">
-          <div class="pledge--order pledge-container">
-            <div class="pledge__selection">
-              <input type="radio" name="pledge-radio" id="pledge-4">
-              <label for="pledge-4" class="pledge__radio"></label>
+          <label for="pledge-4">
+            <div class="pledge--order pledge-container">
+              <div class="pledge__selection">
+                <input type="radio" name="pledge-radio" id="pledge-4" class="pledge__radio-input">
+                <label for="pledge-4" class="pledge__radio"></label>
+              </div>
               <div class="pledge__header">
                 <label for="pledge-4" class="pledge__title">Mahogany Special Edition</label>
                 <div class="pledge__amount">Pledge $200 or more</div>
               </div>
+              <div class="pledge__stock"><strong>0 </strong>left</div>
+              <p class="pledge__body">
+                You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+                to our Backer member list. Shipping is included.
+              </p>
             </div>
-            <div class="pledge__stock"><strong>0 </strong>left</div>
-            <p class="pledge__body">
-              You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-  to our Backer member list. Shipping is included.
-            </p>
-          </div>
+          </label>
         </div>
         <!-- pledge 4 end -->
       </div>
@@ -274,6 +297,6 @@
     <button class="btn-sub got-it">Got it!</button>
   </div>
 
-   <div id="overlay" class="active"></div>
+   <div id="overlay"></div>
 </body>
 </html>
