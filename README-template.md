@@ -1,6 +1,6 @@
-# Frontend Mentor - Crowdfunding product page solution
+# Crowdfunding product page
 
-This is a solution to the [Crowdfunding product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Crowdfunding product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR).
 
 ## Table of contents
 
@@ -16,11 +16,13 @@ This is a solution to the [Crowdfunding product page challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
+
+The challenge for this project is to build out the product page and get it looking as close to the design as possible.
+
+It focuses on the use of HTML, CSS and JS.
 
 Users should be able to:
 
