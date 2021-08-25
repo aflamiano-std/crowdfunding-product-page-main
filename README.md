@@ -11,11 +11,7 @@ This is a solution to the [Crowdfunding product page challenge on Frontend Mento
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -34,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://aflamiano-std.github.io/crowdfunding-product-page-main/)
+- Live Site URL: [View Page](https://aflamiano-std.github.io/crowdfunding-product-page-main/)
 
 ## My process
 1. I started with the main html template with a mobile first approach. The general flow of the elements are not much different from the desktop design making it easy to plot.
