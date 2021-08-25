@@ -55,4 +55,4 @@ Users should be able to:
 
 ### Continued development
 
-I started using flex-grid on some parts of this project and it proved to be efficient in what I was trying to accomplish. I plan on using flex-grid more often and pair it with flex-box as needed to make pages more structured and responsive. There are also interactive elements which can be improved by adding JS elements and form validation and I plan to look into applying it in the future.
+I started using flex-grid on some parts of this project and it proved to be efficient in what I was trying to accomplish. I plan on using flex-grid more often and pair it with flex-box as needed to make pages more structured and responsive. There are also interactive elements which can be improved by adding JS elements and form validation but I only focused on the design aspect for now and I plan to look into applying them later in the future.
